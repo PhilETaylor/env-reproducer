@@ -14,5 +14,5 @@ services:
       CADDY_SERVER_EXTRA_DIRECTIVES: |
         tls internal
         log
-#      FRANKENPHP_CONFIG: "worker ./public/index.php"
-#      APP_RUNTIME: "Runtime\\FrankenPhpSymfony\\Runtime"
+      FRANKENPHP_CONFIG: "worker ./public/index.php"
+      APP_RUNTIME: "Runtime\\FrankenPhpSymfony\\Runtime"
