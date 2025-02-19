@@ -1,0 +1,18 @@
+services:
+
+  test:
+    image: dunglas/frankenphp
+    privileged: true
+    ports:
+      - 443:443
+    volumes:
+      - .:/app
+    environment:
+      ENV: dev
+      APP_ENV: dev
+      SERVER_NAME: localhost
+      CADDY_SERVER_EXTRA_DIRECTIVES: |
+        tls internal
+        log
+#      FRANKENPHP_CONFIG: "worker ./public/index.php"
+#      APP_RUNTIME: "Runtime\\FrankenPhpSymfony\\Runtime"
